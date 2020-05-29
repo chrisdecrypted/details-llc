@@ -1,6 +1,9 @@
-html {
+@media (prefers-color-scheme: light) 
+{
+    html {
     scroll-behavior: smooth;
 }
+
 body {
     width: 90%;
     margin: 2em auto;
@@ -77,4 +80,88 @@ aside {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+}
+@media (prefers-color-scheme: dark) 
+{
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 90%;
+    margin: 2em auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18pt;
+    background-color: var(--background);
+    color: var(--text);
+    --text: rgb(236, 234, 228);
+    --primary: rgb(78, 167, 159);
+    --link: rgb(78, 167, 159);
+    --background: rgb(27, 26, 23);
+}
+
+h1 {
+    font-family: verdigris-mvb-pro-big, serif;
+    font-size: 42pt;
+    letter-spacing: -1pt;
+    line-height: 38pt;
+    font-weight: 400;
+    text-align: center;
+    color: var(--primary);
+}
+h2 {
+    font-size: 42pt;
+    letter-spacing: -2pt;
+    line-height: 38pt;
+    font-weight: 700;
+    text-align: center;
+    color: var(--text);
+}
+a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link);
+    text-decoration: underline;
+}
+
+
+.container {
+    display: grid;
+    grid-template-areas: "header header" "content content" "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0;
+}
+
+header {
+    grid-area: header;
+}
+
+article {
+    grid-area: content;
+}
+
+footer {
+    grid-area: footer;
+}
+
+header,
+footer {
+    border-radius: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+aside {
+    border-right: 1px solid var(--primary);
+}
+
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
 }
