@@ -1,28 +1,102 @@
 <html>
 
 <head>
-    <title>My Now Amazing Webpage</title>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <meta charset="utf-8">
+    <title>Marnie Sorensen | Interior Design</title>
+    <link rel="stylesheet" href="https://use.typekit.net/gmh4pna.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="gallery.css">
+
 </head>
 
 <body>
 
-    <div class="images">
-        <div><img src=""></div>
-        <div>your content</div>
-        <div>your content</div>
+    <script type="text/javascript" src="gallery.js"></script>
+    <div>
+        <h1>Bath</h1>
     </div>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>CSS
+    <div class="row">
+        <div class="column">
+            <img src="img-thumb/bath/fairwater-master-bath.jpg" style="width:100%" onclick="openModal();currentSlide(1)"
+                class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="img-thumb/bath/san-mateo-master-bath.jpg" style="width:100%" onclick="openModal();currentSlide(2)"
+                class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="img-thumb/bath/windsong-master-bath.jpg" style="width:100%" onclick="openModal();currentSlide(3)"
+                class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="img-thumb/bath/winward-master-bath.jpg" style="width:100%" onclick="openModal();currentSlide(4)"
+                class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="img-thumb/bath/winward-powder-bath.jpg" style="width:100%" onclick="openModal();currentSlide(4)"
+                class="hover-shadow cursor">
+        </div>
+    </div>
 
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-                    
-    <script type="text/javascript" src="gallery.js"></script>
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
 
+            <div class="mySlides">
+                <div class="numbertext">1 / 5</div>
+                <img src="img/bath/fairwater-master-bath.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 5</div>
+                <img src="img/bath/san-mateo-master-bath.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 5</div>
+                <img src="img/bath/windsong-master-bath.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 5</div>
+                <img src="img/bath/winward-master-bath.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">5 / 5</div>
+                <img src="img/bath/winward-powder-bath.jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+
+            <div class="column">
+                <img class="demo cursor" src="img/bath/fairwater-master-bath.jpg" style="width:100%"
+                    onclick="currentSlide(1)" alt="Nature and sunrise">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/bath/san-mateo-master-bath.jpg" style="width:100%"
+                    onclick="currentSlide(2)" alt="Snow">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/bath/windsong-master-bath.jpg" style="width:100%"
+                    onclick="currentSlide(3)" alt="Mountains and fjords">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/bath/winward-master-bath.jpg" style="width:100%" onclick="currentSlide(4)"
+                    alt="Northern Lights">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/bath/winward-powder-bath.jpg" style="width:100%" onclick="currentSlide(5)"
+                    alt="Northern Lights">
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
