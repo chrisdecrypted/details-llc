@@ -34,7 +34,7 @@ body {
 
 .gallery>a>img {
   display: block;
-  width: 100%;
+  width: auto;
 }
 
 .header-image {
